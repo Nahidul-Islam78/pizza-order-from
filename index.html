@@ -10,11 +10,11 @@
   <p>our 12" wood-fired pizzas are available for delivery.Build your custom pizza and we'll deliver it within an hour.</p>
   <form action="https://formspree.io/f/mkgozeyj" method="post">
     <p>Your Information</p>
-    <div><label for="name">Name:<input type="text" required></label></div><br>
-    <div><label for="address">Address:<input type="text" required></label></div><br>
-    <div><label for="tel_number">Telephone Number:<input type="tel" required></label></div><br>
-    <div><label for="email">E-mail:<input type="email" required></label></div><br>
-    <div><label for="instuction">Delivery instruction:<br><textarea cols="45" rows="6" placeholder="No more than 400 character long"></textarea></label></div>
+    <div><label for="name">Name:<input type="text" id="name" name="name" required></label></div><br>
+    <div><label for="address">Address:<input type="text" id="address" name="address"required></label></div><br>
+    <div><label for="tel_number">Telephone Number:<input type="tel" id="tel_number" name="tel_number" required></label></div><br>
+    <div><label for="email">E-mail:<input type="email" id="email" name="email" required></label></div><br>
+    <div><label for="instruction">Delivery instruction:<br><textarea cols="45" rows="6" placeholder="No more than 400 character long" id="instruction" name="instruction"></textarea></label></div>
     <h4>Design Your Dream Pizza:</h4>
     <P>Crust(Choose one):</P>
     <input type="radio" id="Classic white" name="pizza_name" value="Classic white"><label for="Classic white">Classic white</label><br>
@@ -32,7 +32,7 @@
       <input type="checkbox" id="Anchovies" name="Topping"value="Anchovies"><label for="Anchovies">Anchovies</label>
     </ul><br>
     <label for="number">How many pizzas:</label>
-    <select name="number" id="number">
+    <select name="number" id="number" >
       <option value="1" selected>1</option>
       <option value="2">2</option>
       <option value="3">3</option>
@@ -42,7 +42,6 @@
     </select><br><br>
     <input type="submit" value="Bring me a pizza">
     <input type="reset">
-     
   </form>
 </body>
 </html>
