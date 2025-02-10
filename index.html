@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pizza order from</title>
+</head>
+<body>
+  <h1>Black Goose Bistro | Pizza-on-Demand</h1>
+  <p>our 12" wood-fired pizzas are available for delivery.Build your custom pizza and we'll deliver it within an hour.</p>
+  <form action="https://formspree.io/f/mkgozeyj" method="post">
+    <p>Your Information</p>
+    <div><label for="name">Name:<input type="text" required></label></div><br>
+    <div><label for="address">Address:<input type="text" required></label></div><br>
+    <div><label for="tel_number">Telephone Number:<input type="tel" required></label></div><br>
+    <div><label for="email">E-mail:<input type="email" required></label></div><br>
+    <div><label for="instuction">Delivery instruction:<br><textarea cols="45" rows="6" placeholder="No more than 400 character long"></textarea></label></div>
+    <h4>Design Your Dream Pizza:</h4>
+    <P>Crust(Choose one):</P>
+    <input type="radio" id="Classic white" name="pizza_name" value="Classic white"><label for="Classic white">Classic white</label><br>
+    <input type="radio" id="Multigrain" name="pizza_name"value="Multigrain"><label for="Multigrain">Multigrain</label><br>
+    <input type="radio" id="Cheese-stuffed crust"name="pizza_name" value="Cheese-stuffed crust"><label for="Cheese-stuffed crust">Cheese-stuffed crust</label><br>
+    <input type="radio" id="Gluten-free"name="pizza_name" value="Gluten-free"><label for="Gluten-free">Gluten-free</label>
+    <p>Toppings(Choose as many as you want):</p>
+    
+      <input type="checkbox" id="Red sauce"name="Topping"value="Red sauce"><label for="Red sauce">Red sauce</label><br>
+      <input type="checkbox" id="White sauce" name="Topping"value="White sauce"><label for="White sauce">White sauce</label><br>
+      <input type="checkbox" id="Mozzarella cheese" name="Topping"value="Mozzarella cheese"><label for="Mozzarella cheese">Mozzarella cheese</label><br>
+      <input type="checkbox" id="Pepperoni" name="Topping"value="Pepperoni"><label for="Pepperoni">Pepperoni</label><br>
+      <input type="checkbox" id="Mushrooms" name="Topping"value="Mushrooms"><label for="Mushrooms">Mushrooms</label><br>
+      <input type="checkbox" id="Peppers"name="Topping" value="Peppers"><label for="Peppers">Peppers</label><br>
+      <input type="checkbox" id="Anchovies" name="Topping"value="Anchovies"><label for="Anchovies">Anchovies</label>
+    </ul><br>
+    <label for="number">How many pizzas:</label>
+    <select name="number" id="number">
+      <option value="1" selected>1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select><br><br>
+    <input type="submit" value="Bring me a pizza">
+    <input type="reset">
+     
+  </form>
+</body>
+</html>
